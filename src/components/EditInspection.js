@@ -40,7 +40,11 @@ class EditInspection extends Component {
         console.log(result)
       }catch(err){
         console.log(err);
-      }
+      };
+
+      this.setState(prevState => ({
+        modal: !prevState.modal
+      }));
     }
       
   render() {

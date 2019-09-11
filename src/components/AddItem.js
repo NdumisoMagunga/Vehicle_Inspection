@@ -28,7 +28,10 @@ class AddItem extends Component {
               'Content-Type': 'application/json',
           },
           body: JSON.stringify(obj)
-      })
+      });
+      this.setState(prevState => ({
+        modal: !prevState.modal
+      }));
   }
   
   toggle() {

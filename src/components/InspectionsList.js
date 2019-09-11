@@ -14,7 +14,7 @@ class InspectionList extends Component {
         this.state = {
         }
     }
-    componentDidMount(id){
+    componentDidMount(){
         this.props.fetchItem();
         this.props.fetchVehicle();
         this.props.fetchUser()
