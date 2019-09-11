@@ -66,7 +66,7 @@ class EditInspection extends Component {
               <FormGroup>
                 <Label>Status</Label>
                 <Input
-                  placeholder="passed or failed"
+                  placeholder="pass or fail"
                   onChange={(e)=> {this.setState({status:e.target.value})}}
                   name="status"
                   id="status"
