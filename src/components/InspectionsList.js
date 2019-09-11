@@ -69,8 +69,8 @@ class InspectionList extends Component {
                             <tr key={index}>
                                 <th scope="row">{index +1}</th>
                                 <td>{i.name}</td>
-                                <td>{i.status === "Yes" ? ("x") : null}</td>
-                                <td>{i.status === "No" ? ("x") : null}</td>
+                                <td>{i.status === "Pass" ? ("x") : null}</td>
+                                <td>{i.status === "Fail" ? ("x") : null}</td>
                                 <td>{i.comment}</td>
                                 <td scope="column">
                                     <Row>
