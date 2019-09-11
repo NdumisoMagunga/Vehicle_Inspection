@@ -67,7 +67,7 @@ class InspectionList extends Component {
                         {this.props.items.map((i, index) => (
                             i._id ? 
                             <tr key={index}>
-                                <th scope="row">{i.index}</th>
+                                <th scope="row">{index +1}</th>
                                 <td>{i.name}</td>
                                 <td>{i.status === "Yes" ? ("x") : null}</td>
                                 <td>{i.status === "No" ? ("x") : null}</td>
