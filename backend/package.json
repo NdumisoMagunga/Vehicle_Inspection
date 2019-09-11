@@ -1,0 +1,40 @@
+{
+  "name": "cemetry_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mosima",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^1.4.0",
+    "apollo-server-express": "^2.1.0",
+    "async": "^2.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "compression": "^1.7.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.3",
+    "csvtojson": "^1.1.9",
+    "date-fns": "^1.29.0",
+    "email-verification": "^0.4.6",
+    "express": "^4.14.0",
+    "graphql": "^14.0.2",
+    "helmet": "^2.2.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.7.0",
+    "multer": "^1.3.0",
+    "nodemailer": "^4.0.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "npm": "^6.2.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}

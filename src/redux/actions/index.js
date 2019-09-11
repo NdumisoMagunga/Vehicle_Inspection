@@ -1,0 +1,33 @@
+import {
+    GET_ITEM,
+    GET_INSPECTION,
+    GET_VEHICLE,
+    GET_USER,
+} from './type';
+const baseUrl = 'http://localhost:88';
+
+export const fetchItem = () => async dispatch => {
+    const res = await fetch(baseUrl +'/api/item', {credentials: 'include'});
+    const data = await res.json();
+    dispatch({type: GET_ITEM, payload: data});
+};
+
+export const fetchUser = () => async dispatch => {
+    const res = await fetch(baseUrl +'/user/profile', {credentials: 'include'});
+    const data = await res.json();
+    console.log('this is the user bhut', data);
+    dispatch({type: GET_USER, payload: data});
+};
+
+export const fetchInspection = () => async dispatch => {
+    const res = await fetch(baseUrl +'/api/inspection', {credentials: 'include'});
+    const data = await res.json();
+    dispatch({type: GET_INSPECTION, payload: data});
+};
+
+export const fetchVehicle = () => async dispatch => {
+    const res = await fetch(baseUrl +'/api/vehicle', {credentials: 'include'});
+    const data = await res.json();
+    dispatch({type: GET_VEHICLE, payload: data});
+};
+
