@@ -20,6 +20,12 @@ class InspectionList extends Component {
         this.props.fetchUser()
     }
 
+    componentWillUpdate() {
+        this.props.fetchItem();
+        this.props.fetchVehicle();
+        this.props.fetchUser()
+    }
+
     deleteInspection = async (id) => {
         try {
             let response = await fetch('http://localhost:88/api/item/'+ id, {
@@ -86,7 +92,6 @@ class InspectionList extends Component {
                                         <Col xs="3">
                                             <Button color="danger"
                                                 onClick={() => this.deleteInspection(i._id)}
-                                                href="/"
                                             >
                                                 Delete
                                             </Button>

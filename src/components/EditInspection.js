@@ -86,7 +86,7 @@ class EditInspection extends Component {
             </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="success" onClick={ this.updateProfile} href="/">Edit Item</Button>
+            <Button color="success" onClick={ this.updateProfile}>Edit Item</Button>
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>

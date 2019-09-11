@@ -80,8 +80,8 @@ class AddItem extends Component {
             </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="success" href="/" onClick={this.onSubmitItem}>Add Item</Button>
-            <Button color="secondary" href="/" onClick={this.toggle}>Cancel</Button>
+            <Button color="success"  onClick={this.onSubmitItem}>Add Item</Button>
+            <Button color="secondary"  onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>
