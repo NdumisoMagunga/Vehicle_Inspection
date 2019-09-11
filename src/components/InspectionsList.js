@@ -45,16 +45,12 @@ class InspectionList extends Component {
                         return <h4 style={{ textAlign: 'center' }} key={index}>InspectionReg# {veg.reg}</h4>
                     })
                 }
-                <div scope='column'>
-                {this.props.inspections.map((inspect, index) => {
-                    return(
-                        <Row key={index}>
-                        <Col><h4 style={{ textAlign: 'left' }}>Date:</h4></Col>
-                        <Col><h4 style={{ textAlign: 'right' }}>Inspected By {inspect.inspectorName} {inspect.inspectorLastName}</h4></Col>
-                    </Row>
-                    )
-                })}   
-                </div>
+                
+                <Row>
+                    <Col><h4 style={{ textAlign: 'left' }}>Date: 10/9/2019</h4></Col>
+                    <Col><h4 style={{ textAlign: 'right' }}>Inspected By: Ndumiso Magunga</h4></Col>
+                </Row>  
+
                 <Table>
                     <thead>
                         <tr></tr>
@@ -109,7 +105,7 @@ class InspectionList extends Component {
         )
     }
     render() {
-        console.log(this.props);
+        console.log(this.props.inspections.user);
         return (
             <div>{this.renderTableView()}</div>
         )

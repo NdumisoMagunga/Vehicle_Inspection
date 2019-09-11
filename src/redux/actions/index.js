@@ -13,9 +13,8 @@ export const fetchItem = () => async dispatch => {
 };
 
 export const fetchUser = () => async dispatch => {
-    const res = await fetch(baseUrl +'/user/profile', {credentials: 'include'});
+    const res = await fetch(baseUrl +'/user/user', {credentials: 'include'});
     const data = await res.json();
-    console.log('this is the user bhut', data);
     dispatch({type: GET_USER, payload: data});
 };
 

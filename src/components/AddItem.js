@@ -35,6 +35,7 @@ class AddItem extends Component {
     this.setState(prevState => ({
       modal: !prevState.modal
     }));
+    
   }
 
   render() {
@@ -79,8 +80,8 @@ class AddItem extends Component {
             </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="success" onClick={this.onSubmitItem} href="/">Add Item</Button>
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <Button color="success" href="/" onClick={this.onSubmitItem}>Add Item</Button>
+            <Button color="secondary" href="/" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>
