@@ -15,7 +15,6 @@ class InspectionList extends Component {
         }
     }
     componentDidMount(id){
-        this.props.fetchInspection();
         this.props.fetchItem();
         this.props.fetchVehicle();
         this.props.fetchUser()
@@ -105,16 +104,15 @@ class InspectionList extends Component {
         )
     }
     render() {
-        console.log(this.props.inspections.user);
         return (
             <div>{this.renderTableView()}</div>
         )
     }
 }
 
-const mapStateToProps = ({inspections, items, vehicle, user }) => {
+const mapStateToProps = ({ items, vehicle, user }) => {
 	return {
-        inspections, items,vehicle, user
+        items,vehicle, user
 	}
 }
 

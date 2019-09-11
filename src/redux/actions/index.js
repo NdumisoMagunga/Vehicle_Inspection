@@ -1,6 +1,5 @@
 import {
     GET_ITEM,
-    GET_INSPECTION,
     GET_VEHICLE,
     GET_USER,
 } from './type';
@@ -16,12 +15,6 @@ export const fetchUser = () => async dispatch => {
     const res = await fetch(baseUrl +'/user/user', {credentials: 'include'});
     const data = await res.json();
     dispatch({type: GET_USER, payload: data});
-};
-
-export const fetchInspection = () => async dispatch => {
-    const res = await fetch(baseUrl +'/api/inspection', {credentials: 'include'});
-    const data = await res.json();
-    dispatch({type: GET_INSPECTION, payload: data});
 };
 
 export const fetchVehicle = () => async dispatch => {
